@@ -34,10 +34,15 @@ main {
   margin-top: 8em;
 }
 
-.card-link {
+.card a {
   text-decoration: none;
 }
 
 .card-title {
   padding-bottom: 0.5em;
+}
+
+.created-text {
+  margin: 0;
+  margin-bottom: 1em;
 }
