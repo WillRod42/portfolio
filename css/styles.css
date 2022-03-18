@@ -68,17 +68,7 @@ main {
 
 .jumbotron {
   animation: slide 0.75s, colorShift 20s linear infinite;
-
-  /* animation-duration: 0.75s;
-  animation-name: slide;
-  
-  color: red;
-  animation: colorShift 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; */
 }
-
-/* Animations */
 
 @keyframes colorShift {
   0% {
