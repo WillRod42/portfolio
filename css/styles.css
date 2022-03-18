@@ -11,7 +11,7 @@ span {
 }
 
 h4 {
-  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 ul.nav-tabs {
@@ -34,14 +34,6 @@ nav.navbar {
   margin: 52px 0 0 0;
 }
 
-#about {
-  margin-bottom: 1em;
-}
-
-#skills {
-  margin-bottom: 1em;
-}
-
 #skills div {
   padding: 1em 1em 1em 2em;
 }
@@ -51,8 +43,14 @@ main {
   background-color: white;
 }
 
-.page-content {
-  margin-top: 2em;
+.row {
+  animation: slideUp 0.5s, fadeIn 1s;
+  margin: 0;
+  margin-top: 1em;
+}
+
+.page-content p {
+  animation: fadeIn 1s;
 }
 
 .card a {
@@ -66,4 +64,84 @@ main {
 .created-text {
   margin: 0;
   margin-bottom: 1em;
+}
+
+.jumbotron {
+  animation: slide 0.75s, colorShift 20s linear infinite;
+
+  /* animation-duration: 0.75s;
+  animation-name: slide;
+  
+  color: red;
+  animation: colorShift 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; */
+}
+
+/* Animations */
+
+@keyframes colorShift {
+  0% {
+    background-color: rgb(255, 0, 0, 0.4);
+  }
+
+  15% {
+    background-color: rgb(255, 165, 0, 0.4);
+  }
+
+  30% {
+    background-color: rgb(255, 255, 0, 0.4);
+  }
+
+  45% {
+    background-color: rgb(0, 128, 0, 0.4);
+  }
+
+  60% {
+    background-color: rgb(0, 255, 255, 0.4);
+  }
+
+  75% {
+    background-color: rgb(0, 0, 255, 0.4);
+  }
+
+  90% {
+    background-color: rgb(255, 0, 255, 0.4);
+  }
+
+  100% {
+    background-color: rgb(255, 0, 0, 0.4);
+  }
+}
+
+@keyframes slide {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    margin-top: 2em;
+  }
+
+  to {
+    margin-top: 1em;
+  }
 }
