@@ -1,5 +1,7 @@
 body {
   width: 85%;
+  max-width: 1020px;
+  min-width: 870px;
   margin: auto;
   background-color: rgb(248, 249, 250); 
 }
@@ -24,14 +26,25 @@ nav.navbar {
   margin: 52px 0 0 0;
 }
 
+#about {
+  margin-bottom: 1em;
+}
+
+#skills {
+  margin-bottom: 1em;
+}
+
+#skills div {
+  padding: 1em 1em 1em 2em;
+}
+
 main {
   padding: 2em;
-  border: 1px solid rgb(222, 226, 230);
   background-color: white;
 }
 
 .page-content {
-  margin-top: 8em;
+  margin-top: 2em;
 }
 
 .card a {
